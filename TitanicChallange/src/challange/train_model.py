@@ -24,7 +24,7 @@ del train['Age'],train['PassengerId'],train['SibSp'],train['Parch']
 del train['Ticket'],train['Cabin'],train['Embarked'],train['Name'],train['Sex']
 
 # Output to new data set
-train.to_csv('Train_Set.csv')
+train.to_csv('../../data/Train_Set.csv')
 
 # New Column 'Child', 1 if Child, 0 if not 
 test["Child"] = 0
@@ -39,5 +39,5 @@ del test['Age'],test['PassengerId'],test['SibSp'],test['Parch']
 del test['Ticket'],test['Cabin'],test['Embarked'],test['Name'],test['Sex']
 test = test.fillna(test.mean()) # Fill the empty slots
 
-test.to_csv('Test_Set.csv')
+test.to_csv('../../data/Test_Set.csv')
 	
